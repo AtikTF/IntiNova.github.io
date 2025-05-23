@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inti Nova - Energía Solar para Todos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <h1 class="logo">INTI NOVA ☀️</h1>
+            <p class="tagline">Energía solar gratuita para todos. Conectando comunidades a través de la sustentabilidad.
+            </p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link" data-section="sobre">Sobre el Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ubicaciones" class="nav-link" data-section="ubicaciones">Ubicaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#beneficios" class="nav-link" data-section="beneficios">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#financiamiento" class="nav-link" data-section="financiamiento">Financiamiento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link" data-section="contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main" role="main">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section visible" aria-labelledby="inicio-title">
+            <h2 id="inicio-title" class="section-title">Revolucionando el Acceso a la Energía</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">🌱</span>
+                    <h3 class="card-title">Misión</h3>
+                    <p>Democratizar el acceso a la energía limpia y renovable, creando espacios de encuentro comunitario
+                        donde la tecnología y la sustentabilidad se unen para construir un futuro más verde.</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">🔋</span>
+                    <h3 class="card-title">Innovación</h3>
+                    <p>Estaciones de carga solar inteligentes que no solo proporcionan energía gratuita, sino que
+                        también educan sobre el potencial de las energías renovables y fomentan la conciencia ambiental.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">🤝</span>
+                    <h3 class="card-title">Comunidad</h3>
+                    <p>Creamos puntos de encuentro donde estudiantes, profesionales y familias pueden conectarse
+                        mientras cargan sus dispositivos, fortaleciendo los vínculos sociales en espacios verdes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre el Proyecto -->
+        <section id="sobre" class="section visible" aria-labelledby="sobre-title">
+            <h2 id="sobre-title" class="section-title">Sobre Inti Nova</h2>
+            <div class="about-grid">
+                <div class="about-card">
+
+                    <h3 class="card-title">¿Qué es Inti Nova?</h3>
+                    <p>Inti Nova es un proyecto pionero que combina tecnología solar avanzada con responsabilidad
+                        social. Instalamos estaciones de carga gratuitas alimentadas 100% por energía solar en parques,
+                        universidades y espacios públicos, creando una red de puntos de acceso energético sustentable.
+                    </p>
+                </div>
+                <div class="about-card">
+
+                    <h3 class="card-title">Nuestro Objetivo</h3>
+                    <p>Eliminar las barreras de acceso a la energía mientras promovemos la adopción de tecnologías
+                        limpias. Cada estación representa un paso hacia la independencia energética y la construcción de
+                        comunidades más resilientes y conscientes del medio ambiente.</p>
+                </div>
+                <div class="about-card">
+
+                    <h3 class="card-title">Impacto Ambiental</h3>
+                    <p>Nuestro objetivo es crear una red que reduzca significativamente la huella de carbono
+                        urbana mientras educamos sobre energías renovables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Ubicaciones -->
+        <section id="ubicaciones" class="section visible" aria-labelledby="ubicaciones-title">
+            <h2 id="ubicaciones-title" class="section-title">Ubicaciones de Estaciones</h2>
+            <div class="map-container">
+                <p style="text-align: center; margin-bottom: 1rem; color: var(--accent-dark); font-weight: 600;">
+                    Explora el mapa para descubrir las ubicaciones de nuestras estaciones de carga solar
+                </p>
+                <div id="map" role="img"
+                    aria-label="Mapa interactivo mostrando ubicaciones de estaciones de carga solar"></div>
+            </div>
+        </section>
+
+        <!-- Sección Beneficios -->
+        <section id="beneficios" class="section visible" aria-labelledby="beneficios-title">
+            <h2 id="beneficios-title" class="section-title">Beneficios del Proyecto</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">🆓</span>
+                    <h3 class="benefit-title">Acceso Gratuito</h3>
+                    <p>Carga completamente gratuita para todos los dispositivos. Sin tarifas ocultas, sin límites de
+                        tiempo. La energía del sol es para todos.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">♻️</span>
+                    <h3 class="benefit-title">100% Sustentable</h3>
+                    <p>Energía limpia y renovable que reduce tu huella de carbono mientras cargas tus dispositivos. Cada
+                        carga es un voto por el planeta.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">📱</span>
+                    <h3 class="benefit-title">Inclusión Digital</h3>
+                    <p>Democratizamos el acceso a la tecnología, garantizando que todos puedan mantener sus dispositivos
+                        cargados sin importar su situación económica.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">👥</span>
+                    <h3 class="benefit-title">Encuentro Social</h3>
+                    <p>Creamos espacios de encuentro donde las personas se conectan mientras esperan, fortaleciendo el
+                        tejido social comunitario.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Financiamiento -->
+        <section id="financiamiento" class="section visible" aria-labelledby="financiamiento-title">
+            <h2 id="financiamiento-title" class="section-title">Modelo de Financiamiento</h2>
+            <div class="financing-content">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem;">Publicidad Responsable para Energía Gratuita</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    Nuestro modelo innovador utiliza publicidad visual estratégicamente ubicada para financiar
+                    completamente las estaciones de carga, garantizando que el servicio sea 100% gratuito para los
+                    usuarios.
+                </p>
+                <div class="financing-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Alianzas Publicitarias</h4>
+                        <p>Colaboramos con empresas comprometidas con la sustentabilidad para mostrar publicidad
+                            responsable.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Instalación Estratégica</h4>
+                        <p>Las pantallas publicitarias se integran armoniosamente con el diseño de las estaciones y el
+                            entorno.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Financiamiento Completo</h4>
+                        <p>Los ingresos publicitarios cubren instalación, mantenimiento y operación de las estaciones.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Servicio Gratuito</h4>
+                        <p>Los usuarios disfrutan de carga gratuita mientras las empresas llegan a audiencias
+                            comprometidas con la sustentabilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section visible" aria-labelledby="contacto-title">
+            <h2 id="contacto-title" class="section-title">Únete al Movimiento</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">✉️</span>
+                    <h3 class="card-title">Contacto General</h3>
+                    <p>info@intinova.com<br>
+                        +1 (555) 123-4567<br>
+                        Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">🏢</span>
+                    <h3 class="card-title">Alianzas Comerciales</h3>
+                    <p>alianzas@intinova.com<br>
+                        Oportunidades de patrocinio y publicidad sustentable</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon" aria-hidden="true">🎓</span>
+                    <h3 class="card-title">Instituciones Educativas</h3>
+                    <p>educacion@intinova.com<br>
+                        Programas especiales para universidades y escuelas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Inti Nova</h3>
+                <p>Revolucionando el acceso a la energía limpia, una estación solar a la vez. Construyendo un futuro
+                    sustentable para todos.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Síguenos en Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Síguenos en Twitter">t</a>
+                    <a href="#" class="social-link" aria-label="Síguenos en Instagram">i</a>
+                    <a href="#" class="social-link" aria-label="Síguenos en LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul style="list-style: none;">
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Estaciones de Carga</a></li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Consultoría Energética</a>
+                    </li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Educación Ambiental</a></li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Alianzas Estratégicas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul style="list-style: none;">
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Blog</a></li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Guías de Sustentabilidad</a>
+                    </li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">Reportes de Impacto</a></li>
+                    <li><a href="#" style="color: var(--nav-text); text-decoration: none;">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Inti Nova. Todos los derechos reservados. | Diseño: Energía Solar para Todos</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>  
+    <script src="index.js"></script>
