@@ -13,7 +13,7 @@ function initMap() {
         {
             coords: [-0.21182155297757171, -78.48987459808514],
             title: "Campus EPN",
-            description: "Primera estación Inti Nova con 8 puertos de carga USB"
+            description: "Primera estación Nova Inti con 8 puertos de carga USB"
         },
         {
             coords: [-0.20833256968304886, -78.49045267535028],
@@ -23,7 +23,7 @@ function initMap() {
         {
             coords: [-0.20784517807303812, -78.49761665923397],
             title: "Parque El Ejido",
-            description: "Estación Inti Nova con 8 puertos de carga USB"
+            description: "Estación Nova Inti con 8 puertos de carga USB"
         }
     ];
 
